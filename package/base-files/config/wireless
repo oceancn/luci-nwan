@@ -1,0 +1,15 @@
+
+config wifi-device 'wl0'
+	option type 'broadcom'
+	option disabled '0'
+	option channel '4'
+	option txpower '16'
+
+config wifi-iface
+	option device 'wl0'
+	option network 'lan'
+	option mode 'ap'
+	option key '123456'
+	option ssid 'openwrt'
+	option encryption 'psk+psk2'
+

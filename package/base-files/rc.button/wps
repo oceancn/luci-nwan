@@ -2,7 +2,6 @@
 
 [ "${ACTION}" = "released" ] || exit 0
 
-qssgreen="/sys/devices/platform/leds-gpio/leds/tp-link:green:qss"
 
 umount_disk(){
   /etc/init.d/aria2 stop
@@ -46,7 +45,5 @@ aria2_switch(){
 [ "$SEEN" -ge 4 ] && {
   if [ -n "`mount | grep /dev/sd`" ];then
     umount_disk > /dev/null
-    echo 1 > ${qssgreen}/brightness
-    echo heartbeat > ${qssgreen}/trigger
   fi
 }
