@@ -6,8 +6,8 @@ local fs = require "nixio.fs"
 local util = require "nixio.util"
 
 local running=(luci.sys.call("pidof aria2c > /dev/null") == 0)
-yaaw="&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"button\" value=\" " .. "yaaw" .. " \" onclick=\"window.open('http://binux.github.io/yaaw/demo')\"/>"
-aria2_webui="&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"button\" value=\" " .. "aria2-webui" .. " \" onclick=\"window.open('http://ziahamza.github.io/webui-aria2')\"/>"
+yaaw="&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"button\" value=\" " .. "yaaw" .. " \" onclick=\"window.open('http://openwrt.lan/yaaw')\"/>"
+aria2_webui="&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"button\" value=\" " .. "aria2-webui" .. " \" onclick=\"window.open('http://openwrt.lan/webui-aria2')\"/>"
 
 if running then
 	m = Map("aria2", translate("aria2"), translate("aria2 is running") .. yaaw .. aria2_webui)
