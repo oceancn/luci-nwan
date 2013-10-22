@@ -2,7 +2,6 @@
 # Copyright (C) 2012 OpenWrt.org
 
 START=50
-ENABLED=yes
 
 start_instance () {
 	local section="$1"

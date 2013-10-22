@@ -9,7 +9,7 @@ config wifi-iface
 	option device 'wl0'
 	option network 'lan'
 	option mode 'ap'
-	option key '8wete7vy'
+	option key 'passwd'
 	option ssid 'room_study'
 	option encryption 'psk+psk2'
 
