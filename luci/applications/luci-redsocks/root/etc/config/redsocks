@@ -4,6 +4,6 @@ config redsocks config
 	option proxytype 'socks5'
 	option autoproxy '0'
 	option proxyip '127.0.0.1'
-	option proxyport '10000'
+	option proxyport '1080'
 	option whitelist_enabled '0'
 	option blacklist_enabled '0'
