@@ -11,7 +11,7 @@ PKG_VERSION:=0.5
 PKG_RELEASE=$(PKG_SOURCE_VERSION)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/netzhi/redsocks.git
+PKG_SOURCE_URL:=https://github.com/ravageralpha/redsocks.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=f8f7bfc80405d025d79658b70e6ef09f221822a6
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
@@ -32,7 +32,7 @@ define Package/redsocks2/description
   This variant is useful for anti-GFW (Great Fire Wall).
 endef
 
-define Package/redsocks/install
+define Package/redsocks2/install
 	$(INSTALL_DIR) $(1)/usr/sbin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/redsocks $(1)/usr/sbin/
 endef
