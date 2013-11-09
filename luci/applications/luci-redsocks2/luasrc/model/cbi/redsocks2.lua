@@ -4,15 +4,15 @@ RA-MOD
 
 local fs = require "nixio.fs"
 
-local running=(luci.sys.call("pidof redsocks > /dev/null") == 0)
+local running=(luci.sys.call("pidof redsocks2 > /dev/null") == 0)
 local button=""
 if running then	
-	m = Map("redsocks", translate("redsocks"), translate("redsocks is running"))
+	m = Map("redsocks2", translate("redsocks2"), translate("redsocks2 is running"))
 else
-	m = Map("redsocks", translate("redsocks"), translate("redsocks is not running"))
+	m = Map("redsocks2", translate("redsocks2"), translate("redsocks2 is not running"))
 end
 
-s = m:section(TypedSection, "redsocks", "")
+s = m:section(TypedSection, "redsocks2", "")
 s.anonymous = true
 
 switch = s:option(Flag, "enabled", translate("Enable"))
@@ -31,6 +31,9 @@ proxytype:value("http-relay")
 
 autoproxy = s:option(Flag, "autoproxy", translate("AutoProxy"))
 autoproxy.rmempty = false
+
+timeout = s:option(Value, "timeout", translate("Timeout"))
+timeout.optional = false
 
 proxyip = s:option(Value, "proxyip", translate("Proxy IP"))
 proxyip.optional = false
