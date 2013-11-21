@@ -2845,6 +2845,12 @@ msgstr "pdnsd"
 msgid "redsocks"
 msgstr "redsocks"
 
+msgid "dnsfilter"
+msgstr "dnsfilter"
+
+msgid "cpulimit"
+msgstr "cpulimit"
+
 #~ msgid "Active Leases"
 #~ msgstr "Active Leases"
 

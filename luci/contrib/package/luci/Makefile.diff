@@ -1,6 +1,6 @@
 --- a/luci/contrib/package/luci/Makefile
 +++ b/luci/contrib/package/luci/Makefile
-@@ -455,6 +455,29 @@
+@@ -455,6 +455,38 @@
  
  $(eval $(call application,watchcat,LuCI Support for Watchcat,\
  	+PACKAGE_luci-app-watchcat:watchcat))
@@ -27,6 +27,15 @@
 +	+PACKAGE_luci-app-redsocks2:redsocks2 \
 +	+PACKAGE_luci-app-redsocks2:kmod-ipt-ipset \
 +	+PACKAGE_luci-app-redsocks2:ipset))
+
++$(eval $(call application,dnsfilter,DNS-Filter LuCI configuration module,\
++	+PACKAGE_luci-app-dnsfilter:libc \
++	+PACKAGE_luci-app-dnsfilter:bash \
++	+PACKAGE_luci-app-dnsfilter:screen \
++	+PACKAGE_luci-dnsfilter:wget))
++
++$(eval $(call application,cpulimit,cpulimit-ng LuCI configuration module,\
++	+PACKAGE_luci-cpulimit:cpulimit-ng))
  
  ### Server Gateway Interfaces ###
  define sgi

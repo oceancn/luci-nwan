@@ -72,3 +72,9 @@ config pdnsd
 
 config redsocks
 	option init redsocks
+
+config dnsfilter
+	option init dnsfilter
+	
+config dnsfilter
+	option init cpulimit
