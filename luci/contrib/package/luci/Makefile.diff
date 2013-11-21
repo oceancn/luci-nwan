@@ -27,7 +27,7 @@
 +	+PACKAGE_luci-app-redsocks2:redsocks2 \
 +	+PACKAGE_luci-app-redsocks2:kmod-ipt-ipset \
 +	+PACKAGE_luci-app-redsocks2:ipset))
-
++
 +$(eval $(call application,dnsfilter,DNS-Filter LuCI configuration module,\
 +	+PACKAGE_luci-app-dnsfilter:libc \
 +	+PACKAGE_luci-app-dnsfilter:bash \
