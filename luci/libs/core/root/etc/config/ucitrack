@@ -78,3 +78,6 @@ config dnsfilter
 	
 config cpulimit
 	option init cpulimit
+	
+config nwan
+	option init nwan

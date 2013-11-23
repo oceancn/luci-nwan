@@ -2823,6 +2823,9 @@ msgstr "dnsfilter"
 msgid "cpulimit"
 msgstr "cpulimit"
 
+msgid "nwan"
+msgstr "nwan"
+
 #~ msgid "Waiting for router..."
 #~ msgstr "等待路由器..."
 
