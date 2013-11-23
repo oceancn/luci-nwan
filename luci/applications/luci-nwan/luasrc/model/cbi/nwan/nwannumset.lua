@@ -42,6 +42,11 @@ enable.rmempty = false
 
 route_modle = s:option(ListValue, "route_modle", translate("route_modle","route modle"))
 route_modle:value("71xx", translate("WDR4310/3310,MW4530R,WR1041N"))
+route_modle:value("db120", translate("db120","db120"))
+route_modle:value("rg100a", translate("rg100a","rg100a"))
+route_modle:value("47xx", translate("47xx","47xx 614v6 7231-4P.."))
+route_modle:value("71xx", translate("71xx","71xx-TP941N 841N V3.."))
+route_modle:value("3420", translate("3420","71xx-tp841v7.."))
 route_modle.default = "WDR4310/3310,MW4530R,WR1041N"
 route_modle.optional = false
 route_modle.rmempty = false
