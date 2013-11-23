@@ -76,5 +76,5 @@ config redsocks
 config dnsfilter
 	option init dnsfilter
 	
-config dnsfilter
+config cpulimit
 	option init cpulimit
